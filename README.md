@@ -65,22 +65,22 @@ The primary objective of this assignment is to compare asymptotic theoretical co
 ### Workload 1: Random Access
 Evaluating 10,000 random `get(index)` operations as $N$ scales.
 
-![Workload 1 Plot](results/plots/workload1.png)
+![Workload 1 Plot](results/plots/chart.png)
 
 ### Workload 2: Search
 Evaluating 1,000 `contains(val)` lookups across $N$ elements.
 
-![Workload 2 Plot](results/plots/workload2.png)
+![Workload 2 Plot](results/plots/chart (1).png)
 
 ### Workload 3: Insertion and Removal
 Evaluating 1,000 insertions and deletions at index $0$ vs index $N/2$.
 
-![Workload 3 Plot](results/plots/workload3.png)
+![Workload 3 Plot](results/plots/chart (2).png)
 
 ### Workload 4: Priority Processing
 Evaluating $N$ sequential `insert` operations followed by $N$ `extractMin` extractions in Min-Heap.
 
-![Workload 4 Plot](results/plots/workload4.png)
+![Workload 4 Plot](results/plots/chart(3).png)
 
 ---
 
