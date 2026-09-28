@@ -91,7 +91,6 @@ public class Benchmark {
                     list.add(val);
                 }
 
-                // Insertion at index 0
                 long start = System.nanoTime();
                 for (int i = 0; i < 1000; i++) arr.add(0, 999);
                 tArr0 += (System.nanoTime() - start);
@@ -100,7 +99,6 @@ public class Benchmark {
                 for (int i = 0; i < 1000; i++) list.add(0, 999);
                 tList0 += (System.nanoTime() - start);
 
-                // Re-build
                 arr = new DynamicArray<>();
                 list = new LinkedList<>();
                 for (int i = 0; i < n; i++) {
@@ -109,7 +107,6 @@ public class Benchmark {
                     list.add(val);
                 }
 
-                // Insertion at index N/2
                 start = System.nanoTime();
                 for (int i = 0; i < 1000; i++) arr.add(arr.size() / 2, 999);
                 tArrMid += (System.nanoTime() - start);
